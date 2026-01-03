@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shravi Tech | AI-Powered Systems</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-navy': '#1F2B37',
+              'brand-blue': '#4F76F6',
+              'brand-white': '#F9F9F9',
+              'brand-green': '#77F2A1',
+            },
+            fontFamily: {
+              sans: ['Archivo', 'sans-serif'],
+            },
+            fontSize: {
+              'label': ['11px', { lineHeight: '1rem', letterSpacing: '0.05em', fontWeight: '500' }],
+              'caption': ['13px', { lineHeight: '1.25rem', fontWeight: '400' }],
+              'body': ['15px', { lineHeight: '1.6rem', fontWeight: '400' }],
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      body { 
+        font-family: 'Archivo', sans-serif; 
+        background-color: #F9F9F9;
+        color: #1F2B37;
+        -webkit-font-smoothing: antialiased;
+      }
+      .heading-sleek {
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        line-height: 1.15;
+      }
+      .hairline-border {
+        border: 1px solid #1F2B37;
+      }
+      .sleek-shadow {
+        box-shadow: 1px 1px 0px 0px #1F2B37;
+      }
+      .sleek-shadow-blue {
+        box-shadow: 1px 1px 0px 0px #4F76F6;
+      }
+      .hover-lift:hover {
+        transform: translateY(-1px);
+        box-shadow: 3px 3px 0px 0px #1F2B37;
+      }
+      .scroll-hide::-webkit-scrollbar { display: none; }
+      .geo-pattern {
+        background-image: radial-gradient(#1F2B37 0.5px, transparent 0.5px);
+        background-size: 48px 48px;
+        opacity: 0.04;
+      }
+      .text-label-sleek {
+        font-size: 11px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0"
+  }
+}
+</script>
+</head>
+  <body class="overflow-x-hidden">
+    <div id="root"></div>
+  </body>
+</html>
