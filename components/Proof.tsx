@@ -55,7 +55,7 @@ const Proof: React.FC = () => {
         {study.id === 'novelblack' && (
           <div className="flex flex-col items-center relative z-10">
             <ShoppingBag className="w-16 h-16 text-brand-blue/30 mb-5" />
-            <div className="text-5xl font-black tracking-tighter text-brand-navy/90">60 DAY GTM</div>
+            <div className="text-5xl font-black tracking-tighter text-brand-navy/90">RAPID GTM</div>
             <div className="text-[11px] font-black text-brand-blue uppercase tracking-[0.25em] mt-2">D2C LAUNCH SYSTEM</div>
           </div>
         )}
@@ -139,7 +139,7 @@ const Proof: React.FC = () => {
           </div>
         </div>
 
-        {/* AI Solutions Section */}
+        {/* AI Systems Section - 2 columns per row */}
         <section className="mb-48">
           <div className="flex items-center gap-6 mb-16 border-b-4 border-brand-navy pb-10">
             <div className="w-16 h-16 bg-brand-navy flex items-center justify-center hard-shadow shadow-brand-blue">
@@ -157,7 +157,7 @@ const Proof: React.FC = () => {
           </div>
         </section>
 
-        {/* Digital Marketing Section */}
+        {/* Marketing Section - Updated to strictly 2 columns per row */}
         <section className="mb-48">
           <div className="flex items-center gap-6 mb-16 border-b-4 border-brand-navy pb-10">
             <div className="w-16 h-16 bg-brand-navy flex items-center justify-center hard-shadow shadow-brand-blue">
@@ -168,7 +168,7 @@ const Proof: React.FC = () => {
               <p className="text-label-caps opacity-50 text-brand-blue">Performance Engines & Traffic Systems</p>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
             {digitalMarketing.map((study) => (
               <CompactStudyCard key={study.id} study={study} />
             ))}

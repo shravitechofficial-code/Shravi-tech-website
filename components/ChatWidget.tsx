@@ -39,7 +39,7 @@ const ChatWidget: React.FC = () => {
     } else if (chatState === 'QUALIFY') {
       setMessages(prev => [...prev, { 
         role: 'ai', 
-        text: "DATA CAPTURED. YOUR GTM CHECKLIST IS BEING GENERATED. THE FINAL STEP IS A STRATEGY CALL TO MAP YOUR 90-DAY ENGINE." 
+        text: "DATA CAPTURED. YOUR GTM CHECKLIST IS BEING GENERATED. THE FINAL STEP IS A STRATEGY CALL TO MAP YOUR GROWTH ENGINE." 
       }]);
       setChatState('COMPLETE');
     }
@@ -114,7 +114,7 @@ const ChatWidget: React.FC = () => {
                 type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                placeholder={chatState === 'IDEA' ? "YOUR STARTUP IDEA..." : "NAME & EMAIL..."}
+                placeholder={chatState === 'IDEA' ? "YOUR STARTUP IDEA..." : "NAME, EMAIL & PHONE..."}
                 className="flex-1 px-4 py-3 bg-white border-2 border-brand-navy font-bold text-xs uppercase tracking-widest outline-none focus:bg-brand-blue/5 focus:border-brand-blue transition-all"
                 autoFocus
               />

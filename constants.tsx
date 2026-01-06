@@ -91,7 +91,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     category: 'marketing',
     name: "Sumukha Hospitals",
     industry: "Healthcare",
-    timeline: "90 days",
+    timeline: "Accelerated",
     revenue: "4X Patient Growth",
     aiUsed: "Hyper-local Targetting",
     services: ["Targeted Ads", "Google Maps SEO", "Community Engagement"],
@@ -151,7 +151,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     category: 'marketing',
     name: "1acre.in",
     industry: "Real Estate",
-    timeline: "90 days",
+    timeline: "Rapid",
     revenue: "4X Organic Traffic",
     aiUsed: "Technical SEO Engine",
     services: ["Technical SEO", "Content Marketing", "Keyword Strategy"],
@@ -191,7 +191,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     category: 'marketing',
     name: "NPrep",
     industry: "EdTech",
-    timeline: "3 months",
+    timeline: "Accelerated",
     revenue: "4X Traffic Growth",
     aiUsed: "SEO Content Engine",
     services: ["Content Marketing", "Technical SEO", "Organic Engine"],
@@ -200,7 +200,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     solution: "Developed an intensive content marketing and technical SEO plan focusing on candidate-intent keywords.",
     impact: [
       "Website traffic doubled (2X).",
-      "Organic traffic quadrupled (4X) in just 3 months.",
+      "Organic traffic quadrupled (4X) in accelerated timelines.",
       "Cost-effective scaling compared to paid ads."
     ],
     clientFeeling: "Our organic growth has become our most reliable lead source.",
@@ -242,7 +242,7 @@ export const TEAM: TeamMember[] = [
 export const FAQS: FAQItem[] = [
   {
     question: "Why AI vs traditional agencies?",
-    answer: "Traditional agencies take 3 months just for planning. We use AI to compress market research, content creation, and testing into 7-14 days."
+    answer: "Traditional agencies take months just for planning. We use AI to compress market research, content creation, and testing into a matter of days."
   },
   {
     question: "What if we don't hit revenue?",

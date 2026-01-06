@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 const FinalCTA: React.FC<{ title?: string; subtitle?: string; buttonText?: string }> = ({ 
   title = "Ready to launch?", 
   subtitle = "Book your AI-powered strategy session today.",
-  buttonText = "Book a strategy call"
+  buttonText = "Let's Talk"
 }) => {
   return (
     <section className="py-32 bg-brand-navy text-white border-t border-brand-navy/5 relative overflow-hidden">
@@ -17,7 +17,7 @@ const FinalCTA: React.FC<{ title?: string; subtitle?: string; buttonText?: strin
           {subtitle}
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
-          <Link to="/book-call" className="bg-brand-blue text-white px-10 py-4 font-medium sleek-shadow-blue transition-all hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none text-[14px] inline-flex items-center justify-center">
+          <Link to="/book-call" className="bg-brand-blue text-white px-10 py-4 font-medium sleek-shadow-blue transition-all hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none text-[14px] inline-flex items-center justify-center uppercase tracking-widest">
             {buttonText} <ArrowRight className="ml-2 w-4 h-4" />
           </Link>
         </div>

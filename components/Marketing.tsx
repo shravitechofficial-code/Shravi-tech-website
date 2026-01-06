@@ -1,13 +1,49 @@
 
 import React from 'react';
-import { Globe, BarChart, PenTool, Target, ArrowRight, Layers, Gauge, Database, Cpu } from 'lucide-react';
+import { Globe, BarChart, PenTool, Target, ArrowRight, Layers, Gauge, Database, Cpu, Activity } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { CASE_STUDIES } from '../constants';
 import FinalCTA from './FinalCTA';
 
 const Marketing: React.FC = () => {
+  const featuredMarketingStories = CASE_STUDIES.filter(s => 
+    ['1acre', 'sumukha'].includes(s.id)
+  );
+
   return (
     <div className="pt-24 bg-brand-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Top Featured Proof - Above Header */}
+        <div className="pt-12 animate-in fade-in slide-in-from-top-4 duration-700">
+          <div className="text-[10px] font-bold text-brand-navy/30 uppercase tracking-[0.3em] mb-4 ml-1">Proof</div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {featuredMarketingStories.map((study) => (
+              <Link 
+                to="/proof" 
+                key={study.id} 
+                className="group bg-white border hairline-border p-6 flex items-center justify-between hover:sleek-shadow-blue transition-all"
+              >
+                <div className="flex items-center gap-5">
+                  <div className="w-12 h-12 bg-brand-navy flex items-center justify-center shrink-0">
+                    <Activity className="w-5 h-5 text-brand-green" />
+                  </div>
+                  <div>
+                    <div className="text-[9px] font-bold text-brand-blue uppercase tracking-[0.2em] mb-1">Live Results</div>
+                    <h4 className="text-sm font-bold text-brand-navy uppercase tracking-tight">{study.name}</h4>
+                  </div>
+                </div>
+                <div className="text-right hidden sm:block">
+                  <div className="text-xl font-bold text-brand-navy leading-none">{study.stats?.[0]?.value || "Live"}</div>
+                  <div className="text-[9px] font-medium text-brand-navy/40 uppercase tracking-widest mt-1">{study.stats?.[0]?.label || "Performance"}</div>
+                </div>
+                <ArrowRight className="w-4 h-4 text-brand-navy/20 group-hover:text-brand-blue group-hover:translate-x-1 transition-all ml-4" />
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* Hero Header */}
         <div className="py-24 border-b border-brand-navy/5 mb-32 relative overflow-hidden">
           <div className="absolute inset-0 geo-pattern"></div>
           <div className="relative z-10">
